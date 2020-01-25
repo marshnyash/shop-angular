@@ -1,0 +1,7 @@
+<div class="product">
+  <ul *ngFor="let product of products">
+    <li>Title: {{ product.title }}</li>
+    <li>Price: {{ product.price }}</li>
+  </ul>
+  <button type="button" class="btn btn-primary" (click)="onBuy()">Buy</button>
+</div>
