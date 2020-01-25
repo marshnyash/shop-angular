@@ -1,6 +1,6 @@
 <div class="cart">
   <h2>Cartd</h2>
-  <div *ngIf="boughtProducts.length; else emptyCart">
+  <div *ngIf="boughtProducts?.length; else emptyCart">
     <ul *ngFor="let product of boughtProducts">
       <li>Title: {{ product.title }}</li>
       <li>Price: {{ product.price }}</li>
