@@ -7,11 +7,12 @@ import { FirstComponent } from './components/first/first-component/first-compone
 import { CartComponent } from './components/cart/cart/cart.component';
 import { ProductsService } from './components/products/products.service';
 import { ProductsModule } from './components/products/products.modul';
+import { CartService } from './components/cart/cart.service';
 
 @NgModule({
   declarations: [AppComponent, FirstComponent, CartComponent],
   imports: [BrowserModule, AppRoutingModule, ProductsModule],
-  providers: [ProductsService],
+  providers: [ProductsService, CartService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
